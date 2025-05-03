@@ -25,7 +25,7 @@ function App() {
       .gesturable({
         listeners: {
           move(event) {
-            setPos2((p) => ({
+            setPos1((p) => ({
               ...p,
               scale: p.scale * (1 + event.ds),
               rotation: p.rotation + event.da,
@@ -49,7 +49,7 @@ function App() {
       .gesturable({
         listeners: {
           move(event) {
-            setPos1((p) => ({
+            setPos2((p) => ({
               ...p,
               scale: p.scale * (1 + event.ds),
               rotation: p.rotation + event.da,
